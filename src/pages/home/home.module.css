@@ -1,4 +1,6 @@
-
+body{
+  background-color: black;
+}
 .flyer{
   width: 100%;
   height: 90vh;
