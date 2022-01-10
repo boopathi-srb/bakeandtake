@@ -13,43 +13,44 @@ const ProductData = {
   cakeOptions: [
       {
           styleName: 'Blackforest',
-          imageSrc: {Blackforest}
+          imageSrc: Blackforest
       },
       {
           styleName: 'Butterscotch',
-          imageSrc: {Butterscotch}
+          imageSrc: Butterscotch 
       },
       {
           styleName: 'Jamun',
-          imageSrc: {Jamun}
+          imageSrc: Jamun
       },
       {
           styleName: 'Chocolate',
-          imageSrc: {Chocolate}
+          imageSrc: Chocolate
       },
       {
         styleName: 'Whiteforest',
-        imageSrc: {Whiteforest}
+        imageSrc: Whiteforest
     },
     {
         styleName: 'Vannila',
-        imageSrc: {Vannila}
+        imageSrc: Vannila
     },
     {
         styleName: 'Rasamalai',
-        imageSrc: {Rasamalai}
+        imageSrc: Rasamalai
     },
     {
         styleName: 'Orange Creamsicle',
-        imageSrc: {Orange_Creamsicle}
+        imageSrc: Orange_Creamsicle
     },
     {
         styleName: 'Fresh fruit gateaux',
-        imageSrc: {Fruit}
+        imageSrc: Fruit
     },
   ],
  
 }
+
 
 Object.freeze(ProductData); //This line of code just makes your object as a constant. No values can be updated.
 

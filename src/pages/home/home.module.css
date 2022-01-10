@@ -9,3 +9,26 @@ body{
   font-size: x-large;
   color: #FFD700;
 }
+.productimage{
+  width: 50%;
+  max-width: 50%;
+  /* border: 2px solid transparent; */
+  border-radius: 8px;
+  margin: 12px;
+  /* cursor: pointer; */
+  /* position: sticky; */
+}
+.cakewrapper{
+  display: flex;
+  align-items: center;
+ padding: 50px;
+}
+.cakename{
+  color: #FFD700;
+  width: 50%;
+  text-align: left;
+}
+.cakepreview{
+   height: 50%;
+   width:100%;
+}

@@ -1,11 +1,27 @@
 import React from 'react'
 import flyer from '../../Bake&Take-home.png';
+// import ProductData from '../../data';
 import classes from './home.module.css';
-import item from '../../data'
 
-const Home = (props) => {
-  
-  
+
+
+const Home=(props)=> {
+  const cakeOptions=props.data.cakeOptions.map((item,pos)=>{
+    const classArr=[classes.productimage]
+    return(
+      <div className={classes.cakewrapper}>
+     
+      <div className={classes.cakepreview}>
+        <img key={pos} className={classArr.join(' ')} src={item.imageSrc} alt={item.styleName}></img>
+      </div>
+      <div className={classes.cakename}>
+        <h1 >{item.styleName}</h1>
+      </div>
+    
+    </div>
+
+    )
+    })
   return (
     <div>
       <div>
@@ -14,12 +30,13 @@ const Home = (props) => {
       <div>
         <h1 className={classes.greeting}>Home Baked!</h1>
       </div>
-      {/* <div>
-        <img src={item.imageSrc} alt={item.styleName}></img>
-        <h4>{item.styleName}</h4>
-      </div> */}
-    </div>
-  )
+      <div >
+        {cakeOptions}
+      </div>
+      </div>
+     
+  );
+
 }
   
 export default Home
