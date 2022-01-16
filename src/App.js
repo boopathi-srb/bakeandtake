@@ -6,6 +6,7 @@ import classes from './App.module.css'
 import Home from './pages/home/home';
 import ProductData from './data';
 import { Component } from 'react';
+import Footer from './components/footer/footer';
 
 class App extends Component {
   state={
@@ -17,6 +18,7 @@ class App extends Component {
       
         <Topbar/>
         <Home data={this.state.productData}/>
+       <Footer/>
         
 
     

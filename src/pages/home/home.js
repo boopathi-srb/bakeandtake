@@ -1,6 +1,5 @@
 import React from 'react'
 import flyer from '../../Bake&Take-home.png';
-// import ProductData from '../../data';
 import classes from './home.module.css';
 
 
@@ -10,14 +9,12 @@ const Home=(props)=> {
     const classArr=[classes.productimage]
     return(
       <div className={classes.cakewrapper}>
-     
       <div className={classes.cakepreview}>
         <img key={pos} className={classArr.join(' ')} src={item.imageSrc} alt={item.styleName}></img>
       </div>
       <div className={classes.cakename}>
         <h1 >{item.styleName}</h1>
       </div>
-    
     </div>
 
     )
