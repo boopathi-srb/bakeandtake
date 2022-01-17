@@ -1,20 +1,14 @@
-*{
-  box-sizing: border-box;
-}
-body{
-  margin: 0;
-  padding: 0;
-}
+
 .topbar{
   display: flex;
-  /* background: black ; */
-  backdrop-filter: blur(70px);
-  width: 100%;
-  height: 60px;
+  background: hsl(0, 0%, 0% );
+  backdrop-filter: blur(1rem);
+  width: 100vw;
+  height: 8vh;
   text-align: right;
   align-items: right;
   justify-content: space-between;
-  z-index: 999;
+  /* z-index: 999; */
   position: fixed;
 }
 .topbar > img{
@@ -32,7 +26,7 @@ body{
 
 nav{
   margin-right: 20px;
-  z-index: 999;
+  /* z-index: 999; */
 }
 .topbar_links a {
   list-style: none;

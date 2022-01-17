@@ -1,4 +1,24 @@
 .App {
   text-align: center;
-  background-color:black;
+  /* background-color:black; */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+body{
+  min-height: 72vh;
+  /* margin-top: 60px; */
+  overflow-x: hidden;
+}
+header{
+  margin: 0;
+  padding: 0%;
+  z-index: 99;
+  width: 100vw;
+}
+footer{
+  width: 100vw;
+  /* position: absolute; */
+  margin-top: auto;
+  margin-bottom: 0%;
 }

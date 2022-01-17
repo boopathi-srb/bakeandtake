@@ -1,7 +1,7 @@
 import React from "react";
 import classes from './topbar.module.css';
 import logo from "./Bake&Take.png";
-
+import About from "../../pages/About/About";
 
 const Topbar =()=>{
   return(

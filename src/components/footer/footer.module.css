@@ -1,28 +1,23 @@
-*{
-  box-sizing: border-box;
-}
-body{
-  margin: 0;
-  padding: 0;
-}
+
 .footer{
   display: flex;
-  width: 100%;
-  height: 30vh;
+  /* width: 100vw; */
+  height: 20vh;
   text-align: right;
   align-items: right;
   justify-content: space-between;
   z-index: 999;
   padding: 2em;
   position: relative;
+  background-color: black;
 }
-.footer::before{
+/* .footer::before{
   content: "";
   display: flex;
   height: 1px;
   width: 100%;
   background: #ffd700;
-}
+} */
 .rightside{
   color: #ffd700;
   position: absolute;

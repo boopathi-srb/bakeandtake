@@ -1,5 +1,5 @@
 body{
-  background-color: black;
+  /* background-color: black; */
 }
 .flyer{
   width: 100%;
@@ -24,6 +24,7 @@ body{
   color: #FFD700;
   width: 50%;
   text-align: left;
+  font-size: 1rem;
 }
 .cakepreview{
    height: 50%;
