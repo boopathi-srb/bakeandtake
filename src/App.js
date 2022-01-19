@@ -4,7 +4,7 @@ import Topbar from './components/topbar/topbar';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import {Routes} from 'react-router-dom';
 import classes from './App.module.css'
-import Home from '../src/pages/home/Home';
+import Home from './pages/home/home';
 import ProductData from './data';
 import { Component } from 'react';
 import Footer from './components/footer/footer';
