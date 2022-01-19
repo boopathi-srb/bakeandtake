@@ -7,17 +7,28 @@ import classes from './home.module.css';
 const Home=(props)=> {
   const cakeOptions=props.data.cakeOptions.map((item,pos)=>{
     const classArr=[classes.productimage]
+    if (pos===0 || pos%2) {
     return(
       <div className={classes.cakewrapper}>
-      <div className={classes.cakepreview}>
-        <img key={pos} className={classArr.join(' ')} src={item.imageSrc} alt={item.styleName}></img>
-      </div>
-      <div className={classes.cakename}>
-        <h1 >{item.styleName}</h1>
-      </div>
-    </div>
+        <div className={classes.cakepreview}>
+          <img key={pos} className={classArr.join(' ')} src={item.imageSrc} alt={item.styleName}></img>
+        </div>
+        <div className={classes.cakename}>
+         <h1 >{item.styleName}</h1>
+        </div>
+     </div>
 
     )
+    }else{
+      <div className={classes.cakewrapper}>
+        <div className={classes.cakename}>
+         <h1 >{item.styleName}</h1>
+        </div>
+        <div className={classes.cakepreview}>
+          <img key={pos} className={classArr.join(' ')} src={item.imageSrc} alt={item.styleName}></img>
+        </div>
+     </div>
+    }
     })
   return (
     <div>
