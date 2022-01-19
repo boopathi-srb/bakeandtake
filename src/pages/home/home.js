@@ -7,7 +7,9 @@ import classes from './home.module.css';
 const Home=(props)=> {
   const cakeOptions=props.data.cakeOptions.map((item,pos)=>{
     const classArr=[classes.productimage]
-    if (pos===0 || pos%2) {
+    console.log(pos);
+    if (pos===0 || pos%2===0
+      ) {
     return(
       <div className={classes.cakewrapper}>
         <div className={classes.cakepreview}>
@@ -20,7 +22,8 @@ const Home=(props)=> {
 
     )
     }else{
-      <div className={classes.cakewrapper}>
+      return(
+        <div className={classes.cakewrapper}>
         <div className={classes.cakename}>
          <h1 >{item.styleName}</h1>
         </div>
@@ -28,6 +31,8 @@ const Home=(props)=> {
           <img key={pos} className={classArr.join(' ')} src={item.imageSrc} alt={item.styleName}></img>
         </div>
      </div>
+      )
+     
     }
     })
   return (
