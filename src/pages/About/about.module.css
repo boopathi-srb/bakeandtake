@@ -4,8 +4,29 @@
 }
 .About_heading{
   padding: 1rem 01rem 0rem ;
+  width: fit-content;
+  position: relative;
+}
+.About_heading::after{
+    content: " ";
+    display: inline-flex;
+    justify-content: center;
+    height: 5px;
+    width: 50%;
+    border-radius: 5%;
+    background-color: #FFD700;
+    position: absolute;
+    top: 100%;
+    left:25%;
+    animation: animate 3s ease-in-out infinite;
+}
+@keyframes animate {
+    0%{transform:scale(0%)}
+    50%{transform: scale(100%);}
+    100%{transform: scale(0%);}
 }
 .content{
   padding: 1rem 01rem 0rem ;
+ width: 70%;
   text-align:left;
 }

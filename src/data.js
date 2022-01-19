@@ -1,12 +1,14 @@
-import Blackforest from './cakes/Black_forest.png';
-import Butterscotch from './cakes/butterscotch.png';
+import Blackforest from './cakes/blackforest.jpg';
+import Butterscotch from './cakes/butterscotch.jpg';
 import Jamun from './cakes/gulabjamun.png';
-import Whiteforest from './cakes/white_forest.png';
-import Vannila from './cakes/vannila.png';
-import Rasamalai from './cakes/rasamalai.png';
-import Orange_Creamsicle from './cakes/orange.png';
-import Fruit from './cakes/fruit.png';
-import Chocolate from './cakes/chocolate.png';
+import Whiteforest from './cakes/whiteforest.jpg';
+// import Vannila from './cakes/vannila.png';
+// import Rasamalai from './cakes/rasamalai.png';
+// import Orange_Creamsicle from './cakes/orange.png';
+// import Fruit from './cakes/fruit.png';
+import Chocolate from './cakes/ChocoTruffle.jpg';
+import Cupcake from './cakes/cupcake.jpg';
+import Theme from './cakes/ThemeCake.jpg';
 
 const ProductData = {
   
@@ -32,21 +34,21 @@ const ProductData = {
         imageSrc: Whiteforest
     },
     {
-        styleName: 'Vannila',
-        imageSrc: Vannila
+        styleName: 'Cupcake',
+        imageSrc: Cupcake
     },
     {
-        styleName: 'Rasamalai',
-        imageSrc: Rasamalai
+        styleName: 'Theme cake',
+        imageSrc: Theme
     },
-    {
-        styleName: 'Orange Creamsicle',
-        imageSrc: Orange_Creamsicle
-    },
-    {
-        styleName: 'Fresh fruit gateaux',
-        imageSrc: Fruit
-    },
+    // {
+    //     styleName: 'Orange Creamsicle',
+    //     imageSrc: Orange_Creamsicle
+    // },
+    // {
+    //     styleName: 'Fresh fruit gateaux',
+    //     imageSrc: Fruit
+    // },
   ],
  
 }

@@ -12,9 +12,12 @@ const Home=(props)=> {
       ) {
     return(
       <div className={classes.cakewrapper}>
-        <div className={classes.cakepreview}>
-          <img key={pos} className={classArr.join(' ')} src={item.imageSrc} alt={item.styleName}></img>
+        <div className={classes.cakewrapper2}>
+         <div className={classes.cakepreview}>
+            <img key={pos} className={classArr.join(' ')} src={item.imageSrc} alt={item.styleName}></img>
+         </div>
         </div>
+       
         <div className={classes.cakename}>
          <h1 >{item.styleName}</h1>
         </div>
@@ -27,9 +30,12 @@ const Home=(props)=> {
         <div className={classes.cakename}>
          <h1 >{item.styleName}</h1>
         </div>
+        <div className={classes.cakewrapper2}>
         <div className={classes.cakepreview}>
           <img key={pos} className={classArr.join(' ')} src={item.imageSrc} alt={item.styleName}></img>
         </div>
+        </div>
+        
      </div>
       )
      
@@ -40,11 +46,20 @@ const Home=(props)=> {
       <div>
         <img className={classes.flyer} src={flyer} alt='BnT-flyer'></img>
       </div>
-      <div>
+      <div className={classes.greetingwrapper}>
         <h1 className={classes.greeting}>Home Baked!</h1>
       </div>
       <div >
         {cakeOptions}
+      </div>
+      <div>
+        <h1 className={classes.greeting}>Our offerings</h1>
+        <p className={classes.typography}>
+          Vannila<br/>
+          Chocolate<br/>
+          Blackforest<br/> whiteforest<br/> Choco Truffle<br/> Gulab jamun<br/> Rasamalai<br/> Fresh fruit gateaux<br/>
+          Orange creamsicle<br/> Cup cakes<br/> Theme cakes
+        </p>
       </div>
       </div>
      
