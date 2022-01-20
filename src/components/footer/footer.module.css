@@ -1,7 +1,7 @@
 
 .footer{
   display: flex;
-  /* width: 100vw; */
+  width: 100vw;
   height: 20vh;
   text-align: right;
   align-items: right;
@@ -11,13 +11,7 @@
   position: relative;
   background-color: black;
 }
-/* .footer::before{
-  content: "";
-  display: flex;
-  height: 1px;
-  width: 100%;
-  background: #ffd700;
-} */
+
 .rightside{
   color: #ffd700;
   position: absolute;
@@ -34,17 +28,11 @@
   font-weight: 600;
   text-decoration: none;
   color:  #FFD700;
-  position: relative;
+  /* position: relative; */
   margin-top: 15px;
 }
-.rightside>h4::after{
-  content: "";
-  background: #ffd700;
-  height: 2px;
-  width: 130%;
-  display: flex;
-  position: absolute;
-}
+
+
 .footer_heading{
   color: #ffd700;
   width: 100px;
@@ -71,6 +59,30 @@
   width: 23ch;
 }
 .leftside>p{
-  align-items: left;
+  position: absolute;
+  left: 40%;
+  top: 85%;
   color: #ffd700;
+  width: fit-content;
+}
+@media only screen and (max-width:768px){
+  .footer_links >a, .leftside>p{
+    font-size: 0.5rem;
+  }
+  .CallIcon{
+    width: 15px;
+    height: 15px;
+  }
+  .footer_heading{
+    font-size: 0.7rem;
+    width: 80px;
+  }
+  .footer_heading::after{
+    width: 100%;
+    height: 1px;
+  }
+  .leftside{
+    left: 150px;
+    width: 12ch;
+  }
 }

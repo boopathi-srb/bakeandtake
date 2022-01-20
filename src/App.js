@@ -9,7 +9,7 @@ import ProductData from './data';
 import { Component } from 'react';
 import Footer from './components/footer/footer';
 import About from './pages/About/About';
-
+import Contact  from './pages/Contact/Contact';
 class App extends Component {
   state={
     productData: ProductData,
@@ -26,6 +26,7 @@ class App extends Component {
          
          <Route path="/" element={<Home data={this.state.productData}/>} exact></Route>
          <Route path="/About" element={ <About/>} exact></Route>
+         <Route path="/Contact" element={ <Contact/>} exact></Route>
          
        </Routes>
       </body>

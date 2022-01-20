@@ -42,7 +42,7 @@ const Home=(props)=> {
     }
     })
   return (
-    <div>
+    <div className={classes.Home}>
       <div>
         <img className={classes.flyer} src={flyer} alt='BnT-flyer'></img>
       </div>
@@ -52,7 +52,7 @@ const Home=(props)=> {
       <div >
         {cakeOptions}
       </div>
-      <div>
+      <div className={classes.offerings_wrapper}>
         <h1 className={classes.greeting}>Our offerings</h1>
         <p className={classes.typography}>
           Vannila<br/>
