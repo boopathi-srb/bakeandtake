@@ -12,6 +12,7 @@ body{
   min-height: 72vh;
   /* margin-top: 60px; */
   overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
 }
 header{
   margin: 0;
