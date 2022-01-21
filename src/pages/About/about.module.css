@@ -18,7 +18,7 @@
     position: absolute;
     top: 100%;
     left:25%;
-    animation: animate 1s ease-in-out infinite;
+    animation: animate 3s ease-in-out infinite;
 }
 @keyframes animate {
     0%{transform:scale(0%)}
@@ -28,6 +28,7 @@
 .content{
   padding: 1rem 01rem 0rem ;
  width: 50%;
+ /* height: 30vw; */
   text-align:left;
 }
 .About_wrapper{
@@ -52,8 +53,10 @@
     flex-direction: column;
   }
   .About_wrapper>img{
-    position: static;
+    /* position: static; */
     margin:auto;
+    right: 0px;
+    top: 60vw ;
     width: 400px;
   }
   .About_heading{
@@ -62,6 +65,7 @@
   }
   .content{
     width:90vw;
+    height: 30vw;
     padding: 0.5rem 1rem 0rem;
     
   }
