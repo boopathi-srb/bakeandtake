@@ -11,8 +11,8 @@ const Home=(props)=> {
     if (pos===0 || pos%2===0
       ) {
     return(
-      <div className={classes.cakewrapper}>
-        <div className={classes.cakewrapper2}>
+      <div className={classes.wrapper1}>
+        <div className={classes.cakewrapper1}>
          <div className={classes.cakepreview}>
             <img key={pos} className={classArr.join(' ')} src={item.imageSrc} alt={item.styleName}></img>
          </div>
@@ -26,7 +26,7 @@ const Home=(props)=> {
     )
     }else{
       return(
-        <div className={classes.cakewrapper}>
+        <div className={classes.wrapper2}>
         <div className={classes.cakename}>
          <h1 >{item.styleName}</h1>
         </div>

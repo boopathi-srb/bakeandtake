@@ -1,22 +1,24 @@
 
 .footer{
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100vw;
-  height: 20vh;
+  height:max-content;
   text-align: right;
   align-items: right;
   justify-content: space-between;
   z-index: 999;
-  padding: 2em;
+  /* padding: 10px; */
   position: relative;
   background-color: black;
 }
 
-.rightside{
+.footer_wrapper1, .footer_wrapper2, .footer_wrapper3{
   color: #ffd700;
-  position: absolute;
-  left: 10%;
-  /* display: flex; */
+  padding: 20px;
+  width: 30vw;
+  align-items: left;
 }
 .footer_links >a{
   list-style: none;
@@ -24,7 +26,7 @@
   justify-content: space-between;
   text-decoration: none;
   margin: 0 1rem ;
-  font-size: 1rem;
+  /* font-size: 1rem; */
   font-weight: 600;
   text-decoration: none;
   color:  #FFD700;
@@ -35,7 +37,7 @@
 
 .footer_heading{
   color: #ffd700;
-  width: 100px;
+  width: 150px;
   text-align: left;
 }
 .footer_heading::after{
@@ -45,29 +47,31 @@
   width: 130%;
   display: flex;
 }
+.footer_innerwrapper1{
+  width: 15vw;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 20px;
+
+}
 .CallIcon{
   width: 30px;
   height: 30px;
-  position: absolute;
-  left: 15%;
 }
-.leftside{
-  position: absolute;
-  left: 200px;
-  top: 0;
-  align-items: left;
-  width: 23ch;
-}
-.leftside>p{
-  position: absolute;
-  left: 40%;
-  top: 85%;
+.footer_wrapper2>p{
   color: #ffd700;
-  width: fit-content;
 }
+/* .footer_wrapper3{
+  width: 30vw;
+} */
 @media only screen and (max-width:768px){
   .footer_links >a, .leftside>p{
     font-size: 0.5rem;
+    line-height: 0.1em;
   }
   .CallIcon{
     width: 15px;
@@ -75,14 +79,23 @@
   }
   .footer_heading{
     font-size: 0.7rem;
-    width: 80px;
+    width: 60px;
   }
   .footer_heading::after{
     width: 100%;
     height: 1px;
   }
-  .leftside{
-    left: 150px;
-    width: 12ch;
+  .footer_wrapper1, .footer_wrapper2, .footer_wrapper3{
+    width: 20vw;
+    padding: 10px;
+  }
+  .footer_innerwrapper1{
+    width: 15vw;
+    margin-left: 0px;
+  }
+  .footer_innerwrapper1, .footer_innerwrapper2>p{
+    font-size: 0.5rem;
+    text-align: left;
+    width: 80px;
   }
 }
