@@ -77,7 +77,7 @@ nav{
     background:black;
     backdrop-filter: blur(100em);
     position: absolute;
-    right: 0;
+    right: -10%;
     top: 30%;
     flex-direction: column;
     justify-content: center;
