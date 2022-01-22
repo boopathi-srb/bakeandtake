@@ -68,9 +68,7 @@
 .cakepreview{
    height: 50%;
    width:100%;
-   border-radius: 100%;
-   background: #FFD700;
-   /* backdrop-filter: blur(1em); */
+   border-radius: 400%;
 }
 .typography{
   font-size: 1.5em;
