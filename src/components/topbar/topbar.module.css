@@ -74,15 +74,15 @@ nav{
     width: 100vw;
   }
   nav {
-    /* background: grey; */
-    backdrop-filter: blur(50px);
+    background:black;
+    backdrop-filter: blur(100em);
     position: absolute;
     right: 0;
-    top: 0;
+    top: 30%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 100%;
     height: max-content;
     margin-top: 40px;
     margin-right: 20px;
