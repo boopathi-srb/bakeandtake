@@ -20,6 +20,7 @@ const Topbar =()=>{
        </nav>
        <label for="toggle_button" className={classes.toggle_button_label}>
          <span></span>
+         <p>X</p>
        </label>
       </div>
      </div>

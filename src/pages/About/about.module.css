@@ -55,7 +55,6 @@
   .About_wrapper>img{
     /* position: static; */
     margin:auto;
-    right: 0px;
     top: 60vw ;
     width: 400px;
   }

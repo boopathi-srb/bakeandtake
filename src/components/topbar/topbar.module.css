@@ -22,20 +22,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-nav{
-  margin-right: 20px;
-  /* z-index: 999; */
+  margin-right: 30px;
 }
 .topbar_links a {
   list-style: none;
   display: inline-flex;
   justify-content: space-between;
   text-decoration: none;
-  margin: 0 1rem ;
+  margin: 1rem ;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: none;
   color:  #FFD700;
   padding: 0.2em;
@@ -52,7 +48,7 @@ nav{
   position: absolute;
   top: 0.75rem;
   right: 1.5rem;
-  max-width: 150px;
+  /* max-width: 150px; */
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -71,45 +67,47 @@ nav{
   }
   .topbar{
     min-height: 60px;
-    width: 100vw;
+    /* width: 100%; */
   }
   nav {
     background:black;
     backdrop-filter: blur(100em);
     position: absolute;
-    right: -10%;
     top: 30%;
+    left: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: max-content;
     margin-top: 40px;
-    margin-right: 20px;
     border-radius: 0px 0px 10px 10px;
     padding: 10px;
     text-align: left;  
-    transform: scale(1,0);
+    transform: scale(0,0);
     transform-origin: top;
     transition: transform 300ms ease-in-out;
     z-index: 999;
   }
-  
+  .topbar_links{
+    width: 95%;
+  }
   .topbar_links> a {
     text-decoration: none;
     display: flex;
     font-size: 0.9rem;
+    width: 100%;
+    margin: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 5px;
+    /* margin-left: 5px; */
     padding: 7px 0px;
     
   }
-  .topbar_links a::before{
+  /* .topbar_links a::before{
     bottom: 0.3em; 
     height: 1.5px;
-  }
+  } */
 
   .toggle_button:checked ~ nav{
     transform: scale(1,1);
@@ -124,6 +122,9 @@ nav{
     height: 100% ;
     display: flex;
     align-items: center;
+  }
+  .toggle_button_label p{
+    visibility: collapse;
   }
   .toggle_button_label span,
   .toggle_button_label span::after,
@@ -147,4 +148,28 @@ nav{
   .toggle_button_label span::after{
     top: 7px;
   }
+  .toggle_button:checked ~  .toggle_button_label span{
+    visibility: hidden;
+    animation: hamburgerX 500ms ease-in ;
+  }
+  .toggle_button:not(:checked) ~  .toggle_button_label p{
+    /* visibility: hidden; */
+    animation: hamburgerX 500ms ease-in reverse;
+  }
+  .toggle_button:checked ~  .toggle_button_label p{
+    visibility: visible;
+    color: #FFD700;
+    position: absolute;
+    top: -12%;
+    left: -50%;
+    font-size: 1.5em;
+    font-weight: 600;
+    animation: hamburgerX 500ms ease-in;
+  }
+  @keyframes hamburgerX {
+    0%{transform: scale3d(0,0,0);}
+    50%{transform: scale3d(0.5,0.5,0.5);}
+    100%{transform: scale3d(1,1,1);}
+  }
+  
 }
