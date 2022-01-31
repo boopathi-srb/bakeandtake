@@ -68,7 +68,7 @@
 .footer_wrapper3{
   background-color: white;
   width: 40ch;
-  margin: 30px;
+  margin: 20px;
 }
 .footer_innerwrapper2>img{
   width: 30px;
@@ -79,5 +79,7 @@
   text-align: center;
 }
 @media only screen and (max-width:768px){
-  
+  .footer_wrapper3{
+    margin: 30px;
+  }
 }

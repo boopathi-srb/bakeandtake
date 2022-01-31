@@ -27,7 +27,7 @@ const Footer = () => {
        <div className={classes.footer_wrapper3}>
          <div className={classes.footer_innerwrapper2}>
          <img  src={LocationIcon} alt='locationicon'/>
-         <p>5/292 E-10 Ajantha Nagar, Kanuvaai, Somayampalayam, Somayampalayam, Coimbatore, Tamil Nadu - 641108</p>
+         <p>5/292 E-10 Ajantha Nagar, Kanuvaai, Somayampalayam, Coimbatore, Tamil Nadu - 641108</p>
            
          </div>
        </div>
