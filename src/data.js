@@ -1,6 +1,6 @@
 import Blackforest from './cakes/blackforest.jpg';
 import Butterscotch from './cakes/butterscotch.jpg';
-import Jamun from './cakes/gulabjamun.png';
+import Jamun from './cakes/gulabjamun.jpg';
 import Whiteforest from './cakes/whiteforest.jpg';
 // import Vannila from './cakes/vannila.png';
 // import Rasamalai from './cakes/rasamalai.png';
@@ -15,30 +15,37 @@ const ProductData = {
   cakeOptions: [
       {
           styleName: 'Blackforest',
+          Rate: '650/kg',
           imageSrc: Blackforest
       },
       {
           styleName: 'Butterscotch',
+          Rate: '700/kg',
           imageSrc: Butterscotch 
       },
       {
           styleName: 'Jamun',
+          Rate: '900/kg',
           imageSrc: Jamun
       },
       {
           styleName: 'Chocolate',
+          Rate: '500/kg',
           imageSrc: Chocolate
       },
       {
         styleName: 'Whiteforest',
+        Rate: '650/kg',
         imageSrc: Whiteforest
     },
     {
         styleName: 'Cupcake',
+        Rate: 'Based on the flavour',
         imageSrc: Cupcake
     },
     {
         styleName: 'Theme cake',
+        Rate: 'Based on the theme',
         imageSrc: Theme
     },
     // {

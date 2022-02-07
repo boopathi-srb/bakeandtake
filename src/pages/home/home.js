@@ -20,6 +20,7 @@ const Home=(props)=> {
        
         <div className={classes.cakename}>
          <h1 >{item.styleName}</h1>
+         <h3>Rate : {item.Rate}</h3>
         </div>
      </div>
 
@@ -29,6 +30,7 @@ const Home=(props)=> {
         <div className={classes.wrapper2}>
         <div className={classes.cakename}>
          <h1 >{item.styleName}</h1>
+         <h3>Rate : {item.Rate}</h3>
         </div>
         <div className={classes.cakewrapper2}>
         <div className={classes.cakepreview}>
