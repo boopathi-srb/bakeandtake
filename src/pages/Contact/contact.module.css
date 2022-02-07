@@ -1,9 +1,5 @@
 .Contact{
-  /* margin-top: 60px; */
   text-align: left;
-}
-.Contact_wrapper{
-  display: flex;
 }
 .Contact_heading{
   padding: 1rem 01rem 0rem ;
@@ -29,12 +25,13 @@
     100%{transform: scale(0%);}
 }
 .content{
-  padding: 1rem 01rem 0rem ;
- width: 70%;
+  padding: 0rem 02rem 0rem ;
   text-align:left;
 }
 .Contact_wrapper{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
  
 }
 .Contact_wrapper>img{
