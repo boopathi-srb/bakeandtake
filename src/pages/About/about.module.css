@@ -33,13 +33,15 @@
 }
 .About_wrapper{
   display: flex;
- 
+  flex-wrap: wrap;
+  gap: 0rem;
 }
 .About_wrapper>img{
-  position: absolute;
+  /* position: absolute;
   top: 10px;
-  right: 40px;
-  animation: animate1 3s ease-in-out infinite;
+  right: 40px; */
+  margin-top: -2rem;
+  /* animation: animate1 3s ease-in-out infinite; */
 }
 @keyframes animate1 {
     0%{transform:scale(0%)}
@@ -49,14 +51,12 @@
     100%{transform: scale(0%);}
 }
 @media only screen and (max-width:768px){
-  .About_wrapper{
+  /* .About_wrapper{
     flex-direction: column;
-  }
+  } */
   .About_wrapper>img{
-    /* position: static; */
     margin:auto;
-    top: 30vw ;
-    width: 400px;
+    width: 90vw;
   }
   .About_heading{
     padding: 0.5rem 0.5rem 0rem;
