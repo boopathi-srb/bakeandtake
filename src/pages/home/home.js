@@ -17,30 +17,30 @@ const Home=(props)=> {
     if (pos===0 || pos%2===0
       ) {
     return(
-      <div className={classes.wrapper1}>
+      <div data-aos="zoom-in-up" data-aos-once="true" className={classes.wrapper1}>
         <div className={classes.cakewrapper1}>
          <div  className={classes.cakepreview}>
-            <img  data-aos="zoom-in-up" data-aos-once="true"key={pos} className={classArr.join(' ')} src={item.imageSrc} alt={item.styleName}></img>
+            <img key={pos} className={classArr.join(' ')} src={item.imageSrc} alt={item.styleName}></img>
          </div>
         </div>
        
         <div  className={classes.cakename}>
-         <h1 data-aos="zoom-in-up" data-aos-once="true">{item.styleName}</h1>
-         <h3 data-aos="zoom-in-up" data-aos-once="true">Rate : {item.Rate}</h3>
+         <h1  >{item.styleName}</h1>
+         <h3 >Rate : {item.Rate}</h3>
         </div>
      </div>
 
     )
     }else{
       return(
-        <div className={classes.wrapper2}>
+        <div  data-aos="zoom-in-up" data-aos-once="true" className={classes.wrapper2}>
         <div className={classes.cakename}>
-         <h1 data-aos="zoom-in-up" data-aos-once="true">{item.styleName}</h1>
-         <h3 data-aos="zoom-in-up" data-aos-once="true">Rate : {item.Rate}</h3>
+         <h1>{item.styleName}</h1>
+         <h3>Rate : {item.Rate}</h3>
         </div>
         <div  className={classes.cakewrapper2}>
         <div  className={classes.cakepreview}>
-          <img data-aos="zoom-in-up" data-aos-once="true" key={pos} className={classArr.join(' ')} src={item.imageSrc} alt={item.styleName}></img>
+          <img  key={pos} className={classArr.join(' ')} src={item.imageSrc} alt={item.styleName}></img>
         </div>
         </div>
         
@@ -56,7 +56,7 @@ const Home=(props)=> {
     });
   return (
     <div className={classes.Home}>
-      <div data-aos="zoom-in-up" data-aos-once="true">
+      <div data-aos="zoom-in-up" data-aos-once="true" data-aos-duration=" 300ms">
         <img className={classes.flyer} src={flyer} alt='BnT-flyer'></img>
       </div>
       <div  data-aos="zoom-in-up" data-aos-once="true" className={classes.greetingwrapper}>
