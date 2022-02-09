@@ -13,8 +13,8 @@ const Home=(props)=> {
       ) {
     return(
       <div className={classes.wrapper1}>
-        <div data-aos="fade-up-right" className={classes.cakewrapper1}>
-         <div className={classes.cakepreview}>
+        <div className={classes.cakewrapper1}>
+         <div  data-aos="fade-up-right" className={classes.cakepreview}>
             <img key={pos} className={classArr.join(' ')} src={item.imageSrc} alt={item.styleName}></img>
          </div>
         </div>
@@ -33,8 +33,8 @@ const Home=(props)=> {
          <h1 >{item.styleName}</h1>
          <h3>Rate : {item.Rate}</h3>
         </div>
-        <div data-aos="fade-up-left" className={classes.cakewrapper2}>
-        <div className={classes.cakepreview}>
+        <div  className={classes.cakewrapper2}>
+        <div data-aos="fade-up-left" className={classes.cakepreview}>
           <img key={pos} className={classArr.join(' ')} src={item.imageSrc} alt={item.styleName}></img>
         </div>
         </div>

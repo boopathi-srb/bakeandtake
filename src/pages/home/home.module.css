@@ -38,9 +38,9 @@
   100%{transform: scale(0%);}
 }
 .productimage{
-  width: 60%;
-  max-width: 60%;
-  border-radius: 100%;
+  /* width: 60%; */
+  max-width: 50ch;
+  border-radius: 40%;
   margin: 12px;
 }
 .wrapper1, .wrapper2{
