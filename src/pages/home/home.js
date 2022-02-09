@@ -58,10 +58,24 @@ const Home=(props)=> {
       <div   className={classes.offerings_wrapper}>
         <h1 data-aos="zoom-in-up" className={classes.greeting}>Our offerings</h1>
         <p className={classes.typography}>
-          Vannila<br/>
-          Chocolate<br/>
-          Blackforest<br/> whiteforest<br/> Butterscotch<br/> Red Velvet<br/> Choco Truffle<br/> Gulab jamun<br/> Pineapple<br/> Rosemilk<br/> Rasamalai<br/> Fresh fruit gateaux<br/>
-          Orange creamsicle<br/> Cup cakes<br/> Theme cakes<br/> <strong>Cookies!</strong>
+          <h5 data-aos="zoom-in-up" >Vannila</h5>
+          <h5 data-aos="zoom-in-up" > Chocolate</h5>
+          <h5 data-aos="zoom-in-up" >Blackforest</h5>
+          <h5 data-aos="zoom-in-up" >Whiteforest</h5>
+          <h5 data-aos="zoom-in-up" >Butterscotch</h5>
+          <h5 data-aos="zoom-in-up" >Red Velvet</h5>
+          <h5 data-aos="zoom-in-up" >Choco Truffle</h5>
+          <h5 data-aos="zoom-in-up" >Pineapple</h5>
+          <h5 data-aos="zoom-in-up" >Rosemilk</h5>
+          <h5 data-aos="zoom-in-up" >Rasamalai</h5>
+          <h5 data-aos="zoom-in-up" >Fresh fruit gateaux</h5>
+          <h5 data-aos="zoom-in-up" >Orange creamsicle</h5>
+          <h5 data-aos="zoom-in-up" >Cup cakes</h5>
+          <h5 data-aos="zoom-in-up" >Theme cakes</h5>
+
+           <h5 data-aos="zoom-in-up" >Cookies!</h5>
+          
+        
         </p>
       </div>
       </div>
