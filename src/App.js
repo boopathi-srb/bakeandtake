@@ -24,7 +24,7 @@ class App extends Component {
       <header>
         <Topbar/>
       </header>
-      <body>
+      <div className={classes.body}>
       <Routes>
          
          <Route path="/" element={<Home data={this.state.productData}/>} exact></Route>
@@ -32,7 +32,7 @@ class App extends Component {
          <Route path="/Contact" element={ <Contact/>} exact></Route>
          
        </Routes>
-      </body>
+      </div>
       <footer className={classes.footer}>
          <Footer/>
       </footer>

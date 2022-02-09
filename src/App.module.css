@@ -9,7 +9,7 @@
   overflow-x: hidden;
   font-family: 'Fredoka One', sans-serif;
 }
-body{
+.body{
   min-height: 68vh;
   margin-top: 4vh;
   max-width: 100vw;
