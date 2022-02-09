@@ -46,17 +46,17 @@ const Home=(props)=> {
     })
   return (
     <div className={classes.Home}>
-      <div>
+      <div data-aos="fade-up">
         <img className={classes.flyer} src={flyer} alt='BnT-flyer'></img>
       </div>
-      <div className={classes.greetingwrapper}>
+      <div  data-aos="fade-up" className={classes.greetingwrapper}>
         <h1 className={classes.greeting}>Home Baked!</h1>
       </div>
       <div >
         {cakeOptions}
       </div>
-      <div className={classes.offerings_wrapper}>
-        <h1 className={classes.greeting}>Our offerings</h1>
+      <div  data-aos="fade-up" className={classes.offerings_wrapper}>
+        <h1  className={classes.greeting}>Our offerings</h1>
         <p className={classes.typography}>
           Vannila<br/>
           Chocolate<br/>
