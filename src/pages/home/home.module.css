@@ -39,7 +39,7 @@
 }
 .productimage{
   /* width: 60%; */
-  max-width: 50ch;
+  max-width: 30ch;
   border-radius: 40%;
   margin: 12px;
 }
@@ -47,11 +47,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
- padding: 50px;
+  margin: 3rem;
 }
 .cakewrapper2, .cakewrapper1{
-  height: 50%;
-  width: 90%;
+  /* height: 50ch; */
+  width:50ch;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -95,11 +95,6 @@
   .greeting::after
   {
     height: 5px;
-  }
-  .productimage{
-    max-width: 80%;
-    /* border-radius: 100%; */
-    margin: 6px;
   }
   .wrapper1, .wrapper2{
    padding: 5px;

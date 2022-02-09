@@ -14,14 +14,14 @@ const Home=(props)=> {
     return(
       <div className={classes.wrapper1}>
         <div className={classes.cakewrapper1}>
-         <div  data-aos="fade-up-right" className={classes.cakepreview}>
-            <img key={pos} className={classArr.join(' ')} src={item.imageSrc} alt={item.styleName}></img>
+         <div  className={classes.cakepreview}>
+            <img  data-aos="zoom-in-up" key={pos} className={classArr.join(' ')} src={item.imageSrc} alt={item.styleName}></img>
          </div>
         </div>
        
-        <div data-aos="fade-up-left" className={classes.cakename}>
-         <h1 >{item.styleName}</h1>
-         <h3>Rate : {item.Rate}</h3>
+        <div  className={classes.cakename}>
+         <h1 data-aos="zoom-in-up">{item.styleName}</h1>
+         <h3 data-aos="zoom-in-up">Rate : {item.Rate}</h3>
         </div>
      </div>
 
@@ -29,13 +29,13 @@ const Home=(props)=> {
     }else{
       return(
         <div className={classes.wrapper2}>
-        <div data-aos="fade-up-right" className={classes.cakename}>
-         <h1 >{item.styleName}</h1>
-         <h3>Rate : {item.Rate}</h3>
+        <div className={classes.cakename}>
+         <h1 data-aos="zoom-in-up">{item.styleName}</h1>
+         <h3 data-aos="zoom-in-up">Rate : {item.Rate}</h3>
         </div>
         <div  className={classes.cakewrapper2}>
-        <div data-aos="fade-up-left" className={classes.cakepreview}>
-          <img key={pos} className={classArr.join(' ')} src={item.imageSrc} alt={item.styleName}></img>
+        <div  className={classes.cakepreview}>
+          <img data-aos="zoom-in-up" key={pos} className={classArr.join(' ')} src={item.imageSrc} alt={item.styleName}></img>
         </div>
         </div>
         
@@ -46,17 +46,17 @@ const Home=(props)=> {
     })
   return (
     <div className={classes.Home}>
-      <div data-aos="fade-up">
+      <div data-aos="zoom-in-up">
         <img className={classes.flyer} src={flyer} alt='BnT-flyer'></img>
       </div>
-      <div  data-aos="fade-up" className={classes.greetingwrapper}>
+      <div  data-aos="zoom-in-up" className={classes.greetingwrapper}>
         <h1 className={classes.greeting}>Home Baked!</h1>
       </div>
       <div >
         {cakeOptions}
       </div>
-      <div  data-aos="fade-up" className={classes.offerings_wrapper}>
-        <h1  className={classes.greeting}>Our offerings</h1>
+      <div   className={classes.offerings_wrapper}>
+        <h1 data-aos="zoom-in-up" className={classes.greeting}>Our offerings</h1>
         <p className={classes.typography}>
           Vannila<br/>
           Chocolate<br/>

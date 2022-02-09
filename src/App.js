@@ -10,11 +10,13 @@ import { Component } from 'react';
 import Footer from './components/footer/footer';
 import About from './pages/About/About';
 import Contact  from './pages/Contact/Contact';
+import AOS from 'aos';
 class App extends Component {
+  
   state={
     productData: ProductData,
   }
-  
+  //  AOS.init();
   render(){
   return (
     <div className={classes.App}>
