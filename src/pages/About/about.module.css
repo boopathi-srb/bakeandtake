@@ -27,6 +27,7 @@
 .content{
   padding: 0rem 02rem 0rem ;
   text-align:left;
+  font-size: 1rem;
 }
 .About_wrapper{
   display: flex;

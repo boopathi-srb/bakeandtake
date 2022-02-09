@@ -5,7 +5,12 @@ import AOS from 'aos';
 
 
 const Home=(props)=> {
-  AOS.init();
+ 
+  const offerings=props.data.offerings.map((item,pos)=>{
+    return(
+      <h5 data-aos="zoom-in-up" data-aos-once="true" >{item.offerings}</h5>
+    )
+  });
   const cakeOptions=props.data.cakeOptions.map((item,pos)=>{
     const classArr=[classes.productimage]
     console.log(pos);
@@ -43,7 +48,12 @@ const Home=(props)=> {
       )
      
     }
+    
     })
+    AOS.init({
+      // offset:50
+      
+    });
   return (
     <div className={classes.Home}>
       <div data-aos="zoom-in-up" data-aos-once="true">
@@ -58,24 +68,7 @@ const Home=(props)=> {
       <div   className={classes.offerings_wrapper}>
         <h1 data-aos="zoom-in-up" data-aos-once="true" className={classes.greeting}>Our offerings</h1>
         <p className={classes.typography}>
-          <h5 data-aos="zoom-in-up" data-aos-once="true" >Vannila</h5>
-          <h5 data-aos="zoom-in-up" data-aos-once="true" > Chocolate</h5>
-          <h5 data-aos="zoom-in-up" data-aos-once="true" >Blackforest</h5>
-          <h5 data-aos="zoom-in-up" data-aos-once="true" >Whiteforest</h5>
-          <h5 data-aos="zoom-in-up" data-aos-once="true" >Butterscotch</h5>
-          <h5 data-aos="zoom-in-up" data-aos-once="true" >Red Velvet</h5>
-          <h5 data-aos="zoom-in-up" data-aos-once="true">Choco Truffle</h5>
-          <h5 data-aos="zoom-in-up" data-aos-once="true">Pineapple</h5>
-          <h5 data-aos="zoom-in-up" data-aos-once="true">Rosemilk</h5>
-          <h5 data-aos="zoom-in-up" data-aos-once="true">Rasamalai</h5>
-          <h5 data-aos="zoom-in-up" data-aos-once="true">Fresh fruit gateaux</h5>
-          <h5 data-aos="zoom-in-up" data-aos-once="true">Orange creamsicle</h5>
-          <h5 data-aos="zoom-in-up" data-aos-once="true">Cup cakes</h5>
-          <h5 data-aos="zoom-in-up" data-aos-once="true">Theme cakes</h5>
-
-           <h5 data-aos="zoom-in-up" data-aos-once="true" >Cookies!</h5>
-          
-        
+          {offerings}
         </p>
       </div>
       </div>

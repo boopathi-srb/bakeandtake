@@ -57,6 +57,24 @@ const ProductData = {
     //     imageSrc: Fruit
     // },
   ],
+
+  offerings: [
+      {offerings: 'Vannila' },
+      {offerings: 'Chocolate'},
+      {offerings: 'Black Forest'},
+      {offerings: 'White Forest'},
+      {offerings: 'Butterscotch'},
+      {offerings: 'Red Velvet'},
+      {offerings: 'Choco Truffle'},
+      {offerings: 'Pineapple'},
+      {offerings: 'Rosemilk'},
+      {offerings: 'Rasamalai'},
+      {offerings: 'Fresh fruit gateaux'},
+      {offerings: 'Orange creamsicle'},
+      {offerings: 'Cup cakes'},
+      {offerings: 'Theme cakes'},
+      {offerings: 'Cookies!'},
+  ]
  
 }
 
