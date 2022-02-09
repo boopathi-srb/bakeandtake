@@ -49,21 +49,21 @@ const Home=(props)=> {
       <div data-aos="zoom-in-up" data-aos-once="true">
         <img className={classes.flyer} src={flyer} alt='BnT-flyer'></img>
       </div>
-      <div  data-aos="zoom-in-up"data-aos-once="true" className={classes.greetingwrapper}>
+      <div  data-aos="zoom-in-up" data-aos-once="true" className={classes.greetingwrapper}>
         <h1 className={classes.greeting}>Home Baked!</h1>
       </div>
       <div >
         {cakeOptions}
       </div>
       <div   className={classes.offerings_wrapper}>
-        <h1 data-aos="zoom-in-up"data-aos-once="true" className={classes.greeting}>Our offerings</h1>
+        <h1 data-aos="zoom-in-up" data-aos-once="true" className={classes.greeting}>Our offerings</h1>
         <p className={classes.typography}>
-          <h5 data-aos="zoom-in-up"data-aos-once="true" >Vannila</h5>
-          <h5 data-aos="zoom-in-up"data-aos-once="true" > Chocolate</h5>
-          <h5 data-aos="zoom-in-up"data-aos-once="true" >Blackforest</h5>
-          <h5 data-aos="zoom-in-up"data-aos-once="true" >Whiteforest</h5>
-          <h5 data-aos="zoom-in-up"data-aos-once="true" >Butterscotch</h5>
-          <h5 data-aos="zoom-in-up"data-aos-once="true" >Red Velvet</h5>
+          <h5 data-aos="zoom-in-up" data-aos-once="true" >Vannila</h5>
+          <h5 data-aos="zoom-in-up" data-aos-once="true" > Chocolate</h5>
+          <h5 data-aos="zoom-in-up" data-aos-once="true" >Blackforest</h5>
+          <h5 data-aos="zoom-in-up" data-aos-once="true" >Whiteforest</h5>
+          <h5 data-aos="zoom-in-up" data-aos-once="true" >Butterscotch</h5>
+          <h5 data-aos="zoom-in-up" data-aos-once="true" >Red Velvet</h5>
           <h5 data-aos="zoom-in-up" data-aos-once="true">Choco Truffle</h5>
           <h5 data-aos="zoom-in-up" data-aos-once="true">Pineapple</h5>
           <h5 data-aos="zoom-in-up" data-aos-once="true">Rosemilk</h5>
@@ -73,7 +73,7 @@ const Home=(props)=> {
           <h5 data-aos="zoom-in-up" data-aos-once="true">Cup cakes</h5>
           <h5 data-aos="zoom-in-up" data-aos-once="true">Theme cakes</h5>
 
-           <h5 data-aos="zoom-in-up"data-aos-once="true" >Cookies!</h5>
+           <h5 data-aos="zoom-in-up" data-aos-once="true" >Cookies!</h5>
           
         
         </p>
