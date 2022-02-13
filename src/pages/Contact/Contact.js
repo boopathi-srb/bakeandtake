@@ -7,7 +7,7 @@ const Contact = () => {
         <div className={classes.Contact_rightside}>
           <h1 className={classes.Contact_heading}>Address</h1>
           <p className={classes.content}>
-          5/292 E-10 Ajantha Nagar, Kanuvaai, Somayampalayam, Somayampalayam, Coimbatore, Tamil Nadu - 641108
+          5/292 E-10 Ajantha Nagar, Kanuvaai, Somayampalayam, Coimbatore, Tamil Nadu - 641108
           </p>
         </div>
         <div className={classes.Contact_leftside}>
