@@ -25,7 +25,7 @@ const Order=(props)=> {
           </div>
           <div>
             <label>Contact Number</label>
-            <input type="number" placeholder='Enter your Contact number'required />
+            <input type="text" maxLength="10" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" placeholder='Enter your Contact number'required />
           </div>
           <div>
            <label>Cake flavour</label>

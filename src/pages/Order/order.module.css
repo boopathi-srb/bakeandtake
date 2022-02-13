@@ -17,3 +17,12 @@
   width: 10ch;
   margin: auto;
 }
+.form div:nth-child(6) input{
+  height: 10ch;
+  /* margin: auto; */
+}
+.form div input,select{
+  border: none;
+  border-bottom: 1px solid black;
+  margin-top: 1rem;
+}
