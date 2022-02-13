@@ -38,6 +38,13 @@
   padding: 0.2em;
   border-radius: 10%;
 }
+.topbar_links a:nth-child(4){
+  color: black;
+  background-color: #FFD700;
+  padding: 0.7rem;
+  border-radius: 1rem;
+  font-weight: 700;
+ }
 @keyframes navlinks {
   from{ color: #FFD700; background-color: black;}
   to{color: black; background-color: #FFD700;}
@@ -76,6 +83,7 @@
     position: absolute;
     top: 30%;
     left: 0;
+    margin: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -101,15 +109,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin-left: 5px; */
     padding: 7px 0px;
     
   }
-  /* .topbar_links a::before{
-    bottom: 0.3em; 
-    height: 1.5px;
-  } */
-
+  .topbar_links a:nth-child(4){
+    padding: 0.5rem 0rem;
+   }
   .toggle_button:checked ~ nav{
     transform: scale(1,1);
     z-index: 0;
@@ -154,7 +159,7 @@
     animation: hamburgerX 500ms ease-in ;
   }
   .toggle_button:not(:checked) ~  .toggle_button_label p{
-    /* visibility: hidden; */
+    visibility: hidden;
     animation: hamburgerX 500ms ease-in reverse;
   }
   .toggle_button:checked ~  .toggle_button_label p{

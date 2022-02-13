@@ -10,6 +10,7 @@ import { Component } from 'react';
 import Footer from './components/footer/footer';
 import About from './pages/About/About';
 import Contact  from './pages/Contact/Contact';
+import Order from './pages/Order/order';
 // import AOS from 'aos';
 class App extends Component {
   
@@ -30,6 +31,7 @@ class App extends Component {
          <Route path="/" element={<Home data={this.state.productData}/>} exact></Route>
          <Route path="/About" element={ <About/>} exact></Route>
          <Route path="/Contact" element={ <Contact/>} exact></Route>
+         <Route path="/Order" element={ <Order/>} exact></Route>
          
        </Routes>
       </div>
