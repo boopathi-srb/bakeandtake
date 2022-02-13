@@ -68,6 +68,7 @@ const ProductData = {
       {offerings: 'Choco Truffle'},
       {offerings: 'Pineapple'},
       {offerings: 'Rosemilk'},
+      {offerings: 'Gulabjamun'},
       {offerings: 'Rasamalai'},
       {offerings: 'Fresh fruit gateaux'},
       {offerings: 'Orange creamsicle'},
