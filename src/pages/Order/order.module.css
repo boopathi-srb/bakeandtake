@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Fredoka+One&family=Josefin+Sans:wght@500&family=Montserrat:wght@500&family=Poppins:wght@500&display=swap');
 .Order{
-  margin-top: 2rem;
+  margin-top: 4rem;
   margin-bottom: 2rem;
+}
+.content{
+  margin-bottom: 4rem;
 }
 .form{
   display: flex;
@@ -9,21 +13,52 @@
   width: 50vw;
   margin: auto;
   gap: 2rem;
+  font-family: 'Poppins', cursive;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 30px #000000;
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 3rem;
 }
 .form div{
   display: grid;
 }
-.form div:nth-child(8){
+.form div:nth-child(10) button{
   width: 10ch;
   margin: auto;
+  background-color: black;
+  border: none;
+  color: #ffd700;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+  font-family: 'Poppins', cursive;
+  border-radius: 1rem;
 }
 .form div:nth-child(6) input{
-  height: 10ch;
-  /* margin: auto; */
+  height: 4ch;
 }
-.form div input,select{
+.form div:nth-child(8) textarea{
+  width: 50vw;
+  height: fit-content;
   border: none;
+  font-family: 'Poppins', cursive;
   border-bottom: 1px solid black;
+  outline: none;
+  resize: none;
+}
+.form div input, select{
+  border: none;
   margin-top: 1rem;
   background: none;
+  font-family: 'Poppins', cursive;
+  outline: none;
+  overflow: wrap;
+  border-bottom: 1px solid black;
+}
+.form div input:required{
+  outline: #ffd700;
+}
+.selection:focus option:first-of-type {
+  display: none;
 }

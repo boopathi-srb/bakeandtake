@@ -25,11 +25,12 @@ const Order=(props)=> {
           </div>
           <div>
             <label>Contact Number</label>
-            <input type="text" maxLength="10" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" placeholder='Enter your Contact number'required />
+            <input type="text" minLength="10"maxLength="10" pattern="[0-9]{10}" placeholder='Enter your Contact number'required />
           </div>
           <div>
            <label>Cake flavour</label>
-            <select required>
+            <select className={classes.selection} required>
+              <option disabled="disabled" selected>Pick your choice!</option>
               <option>Black forest</option>
               <option>White forest</option>
               <option>Butterscotch</option>
@@ -49,8 +50,17 @@ const Order=(props)=> {
             </select>
           </div>
           <div>
+          <label>Required theme</label>
+            <input type="text" maxLength="10" placeholder="Enter the theme you wish"></input>
+          </div>
+          <div>
+            <label>Upload a sample pic of your theme(IF AVAILABLE) </label>
+            <input type="file"></input>
+          </div>
+          <div>
             <label>Quantity</label>
-            <select required>
+            <select className={classes.selection} required>
+            <option disabled="disabled" selected>Pick the quantity</option>
              <option>2kg</option>
              <option>1.5kg</option>
              <option>1kg</option>
@@ -59,27 +69,15 @@ const Order=(props)=> {
           </div>
           <div>
             <label>Address</label>
-            <input type="text" placeholder="Enter your correct address" size="30" required/>
+            <textarea type="text" rows="6" cols="50" placeholder="Enter your correct address" size="30" required/>
           </div>
           <div>
             <label>Date and time of delivery</label>
             <input type="datetime-local" placeholder="Enter the delivery due time" required/>
           </div>
           <div>
-            <button color="blue" type='submit'>Submit</button>
+            <button color="blue" type='submit'>Order</button>
           </div>
-           
-         
-            
-          
-            
-            
-            
-           
-
-            
-          
-
         </form>
         </div>
         </div>
