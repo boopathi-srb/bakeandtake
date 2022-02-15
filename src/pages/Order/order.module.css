@@ -63,7 +63,10 @@
 }
 @media screen and (max-width:768px) {
   .form{
-    /* width: 60vw; */
-    padding: 1.5rem;
+    width: 60vw;
+    /* padding: 1.5rem; */
+  }
+  .form div input, select{
+    width: 60vw;
   }
 }
