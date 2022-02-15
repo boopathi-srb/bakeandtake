@@ -14,7 +14,7 @@ const Order=(props)=> {
           </p>
          
 
-        <form className={classes.form}>
+        <form className={classes.form}  autocomplete="on">
           <div>
             <label>Name</label>
             <input type="text" placeholder='Enter your name' required />
