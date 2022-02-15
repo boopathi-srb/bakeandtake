@@ -1,20 +1,26 @@
 import React from 'react';
 import classes from './order.module.css'
 
-var form = document.getElementById('sheetdb-form');
-form.addEventListener("submit", e => {
-  e.preventDefault();
-  fetch(form.action, {
-      method : "POST",
-      body: new FormData(document.getElementById("sheetdb-form")),
-  }).then(
-      response => response.json()
-  ).then((html) => {
-    // you can put any JS code here
-    window.open( '_blank');
-
+window.onload=function(){
+  var form = document.getElementById('sheetdb-form');
+  form.addEventListener("submit", el => {
+    if(el){
+    el.preventDefault();}
+    fetch(form.action, {
+        method : "POST",
+        body: new FormData(document.getElementById("sheetdb-form")),
+    }).then(
+        response => response.json()
+    )
+    .then(() => {
+      // you can put any JS code here
+      window.open( '_blank');
+  
+    });
+  
   });
-});
+}
+
 const Order=(props)=> {
 
  
@@ -27,7 +33,7 @@ const Order=(props)=> {
           </p>
          
 
-        <form action="https://sheetdb.io/api/v1/98cwrppbe6qwy" method="post" id="sheetdb-form" className={classes.form}  autocomplete="on">
+        <form action="https://sheetdb.io/api/v1/98cwrppbe6qwy" method="post" id="sheetdb-form" className={classes.form}  autoComplete="on">
           <div>
             <label for="Name">Name</label>
             <input type="text" placeholder='Enter your name' name="data[Name]" required />
