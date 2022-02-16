@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './order.module.css'
+// import orderplaced from '../Orderplaced/orderplaced'
 
 window.onload=function(){
   var form = document.getElementById('sheetdb-form');
@@ -14,7 +15,7 @@ window.onload=function(){
     )
     .then(() => {
       // you can put any JS code here
-      window.open( "/", "_self");
+      window.open( "/orderplaced", "_self");
   
     });
   

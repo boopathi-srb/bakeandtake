@@ -57,9 +57,9 @@
   align-items: center;
 }
 .footer_innerwrapper1>img{
-  width: 30px;
+  width: 20ch;
   text-align: center;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 .footer_innerwrapper1>p{
   color: #ffd700;
