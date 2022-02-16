@@ -46,6 +46,7 @@
 @media  screen and (max-width:768px) {
   .wrapper{
     width: 25ch;
+    padding: 2.5rem;
   }
   .wrapper>h1{
     font-size: 2rem;
@@ -53,5 +54,6 @@
   }
   .wrapper>p{
     font-size: 0.9rem;
+    margin-bottom: 2rem;
   }
 }
