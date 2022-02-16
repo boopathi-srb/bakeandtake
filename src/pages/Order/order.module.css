@@ -35,6 +35,10 @@
   font-family: 'Poppins', cursive;
   border-radius: 1rem;
 }
+.form div:nth-child(10) button:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+}
 .form div:nth-child(6) input{
   height: 4ch;
 }

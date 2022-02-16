@@ -11,6 +11,7 @@ import Footer from './components/footer/footer';
 import About from './pages/About/About';
 import Contact  from './pages/Contact/Contact';
 import Order from './pages/Order/order';
+// import Orderplaced from './pages/Orderplaced/orderplaced';
 // import AOS from 'aos';
 class App extends Component {
   
@@ -32,6 +33,7 @@ class App extends Component {
          <Route path="/About" element={ <About/>} exact></Route>
          <Route path="/Contact" element={ <Contact/>} exact></Route>
          <Route path="/Order" element={ <Order/>} exact></Route>
+         {/* <Route path="/Orderplaced" element={ <Orderplaced/>} exact></Route> */}
          
        </Routes>
       </div>

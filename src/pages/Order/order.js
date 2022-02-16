@@ -3,9 +3,9 @@ import classes from './order.module.css'
 
 window.onload=function(){
   var form = document.getElementById('sheetdb-form');
-  form.addEventListener("submit", el => {
-    if(el){
-    el.preventDefault();}
+  form.addEventListener("submit", e => {
+  
+    e.preventDefault();
     fetch(form.action, {
         method : "POST",
         body: new FormData(document.getElementById("sheetdb-form")),
@@ -14,12 +14,14 @@ window.onload=function(){
     )
     .then(() => {
       // you can put any JS code here
-      window.open( '_blank');
+      window.open( "/", "_self");
   
     });
   
   });
 }
+
+
 
 const Order=(props)=> {
 
@@ -78,8 +80,8 @@ const Order=(props)=> {
           </div>
           <div>
             <label for="Quantity">Quantity</label>
-            <select className={classes.selection} required>
-            <option disabled="disabled" name="data[Quantity]" selected>Pick the quantity</option>
+            <select className={classes.selection}  name="data[Quantity]" required>
+            <option disabled="disabled" selected>Pick the quantity</option>
              <option>2kg</option>
              <option>1.5kg</option>
              <option>1kg</option>
