@@ -35,10 +35,10 @@ const Order=(props)=> {
           </p>
          
 
-        <form action="https://sheetdb.io/api/v1/98cwrppbe6qwy" method="post" id="sheetdb-form" className={classes.form}  autoComplete="on">
+        <form action="https://sheetdb.io/api/v1/dbno1om97ktt4" method="post" id="sheetdb-form" className={classes.form}  autoComplete="on">
           <div>
             <label for="Name">Name</label>
-            <input type="text" placeholder='Enter your name' name="data[Name]" required />
+            <input type="text" placeholder='Enter your Full name' name="data[Name]" required />
           </div>
           <div>
             <label for="Email">Email</label>
@@ -75,8 +75,8 @@ const Order=(props)=> {
             <input type="text" maxLength="10" placeholder="Enter the theme you wish" name="data[Required theme]"></input>
           </div>
           <div>
-            <label for="Sample pic">Upload a sample pic of your theme<br/>(IF AVAILABLE) </label>
-            <input type="file" name="data[Sample pic]"></input>
+          <label for="Theme link">Sample picture of the theme<br/>(IF SELECTED THEME CAKE)</label>
+            <input type="text" maxLength="100" placeholder="Enter the link to the sample pic" name="data[Theme link]"></input>
           </div>
           <div>
             <label for="Quantity">Quantity</label>
@@ -97,7 +97,7 @@ const Order=(props)=> {
             <input type="datetime-local" placeholder="Enter the delivery due time" name="data[Delivery due]" required/>
           </div>
           <div>
-            <button color="blue" type='submit'>Order</button>
+            <button color="blue" type='submit' >Order</button>
           </div>
         </form>
         </div>
