@@ -11,7 +11,7 @@
   /* z-index: 999; */
   position: fixed;
 }
-.topbar > img{
+.topbar>img{
   max-width: 60px;
   align-items: left;
   position:absolute;
@@ -70,8 +70,9 @@
 
 
 @media only screen and (max-width:768px){
-  .logo{
-    max-width: 50px;
+  .topbar>img{
+    max-width: 60px;
+    left: 5%;
   }
   .topbar{
     min-height: 60px;

@@ -14,12 +14,12 @@ const ProductData = {
   
   cakeOptions: [
       {
-          styleName: 'Blackforest',
+          styleName: 'Black forest',
           Rate: '650/kg',
           imageSrc: Blackforest
       },
       {
-          styleName: 'Butterscotch',
+          styleName: 'Butter scotch',
           Rate: '700/kg',
           imageSrc: Butterscotch 
       },
@@ -34,7 +34,7 @@ const ProductData = {
           imageSrc: Chocolate
       },
       {
-        styleName: 'Whiteforest',
+        styleName: 'White  forest',
         Rate: '650/kg',
         imageSrc: Whiteforest
     },
