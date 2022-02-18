@@ -1,4 +1,5 @@
 import React from 'react';
+// import classes from './order.module.css'
 import  './order.css';
 
 import Orderplaced from '../Orderplaced/orderplaced'
@@ -13,7 +14,11 @@ window.onload=function(){
         body: new FormData(document.getElementById("sheetdb-form")),
     }).then(
         response => response.json()
-    )
+    ).then(() => {
+      // you can put any JS code here
+      window.open( "", "");
+
+    });
   
   });
 }
@@ -110,10 +115,14 @@ const Order=(props)=> {
             <button data-popup-target="#popup" type='submit' >Order</button>
           </div>
         </form>
+        {/* <div className="active"> */}
          <div className='popup' id="popup">
            <Orderplaced/>   
          </div>
          <div  className='overlay' id="overlay"></div>
+
+        {/* </div> */}
+       
         </div>
         </div>
   </div>;
