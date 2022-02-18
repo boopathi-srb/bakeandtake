@@ -1,15 +1,38 @@
 
+.overlay{
+  background-color: #000000;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%;
+  z-index: 99;
+  opacity: 0.8;
+  pointer-events: none;
+}
+.outerwrapper{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  width: 100%;
+  height: auto;
+}
 .wrapper{
+ 
   width: 70ch;
+  /* height:80ch; */
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 2px 2px 10px  rgb(27, 26, 26);
   backdrop-filter: blur(2em);
   margin: auto;
   margin-top: 7rem;
-  margin-bottom: 7rem;
-  /* height: 45vw; */
-  padding: 4rem;
+  margin-bottom: 7rem; 
+  height: 60vw;
+   padding: 1rem;
+  z-index: 100;
 }
 .thumbsup{
   margin: auto;
@@ -44,6 +67,7 @@
   animation: transform 400ms ease-in-out;
   animation-delay: 500ms;
   font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 .wrapper>a:hover{
   transform: scale(1.3);

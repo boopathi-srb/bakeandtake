@@ -1,8 +1,7 @@
 import React from 'react';
-// import classes from './order.module.css'
 import  './order.css';
 
-import Orderplaced from '../Orderplaced/orderplaced'
+// JS code for posting into google sheets
 
 window.onload=function(){
   var form = document.getElementById('sheetdb-form');
@@ -16,7 +15,7 @@ window.onload=function(){
         response => response.json()
     ).then(() => {
       // you can put any JS code here
-      window.open( "", "");
+      window.open( "/Orderplaced", "_self");
 
     });
   
@@ -26,22 +25,6 @@ window.onload=function(){
 
 
 const Order=(props)=> {
-  
-  const openPopupview = document.querySelectorAll('[data-popup-target]')
- const overlay = document.getElementById('overlay')
-
- openPopupview.forEach(button=>{
-   button.addEventListener('click', ()=>{
-     const popup=document.querySelector(button.dataset.popupTarget)
-     openPopup(popup)
-   })
- })
- const openPopup=(popup)=>{
-   if (popup == null)
-   return
-   popup.classList.add('active')
-   overlay.classList.add('active')
- }
   return <div className='Order'>
       <div className='order_wrapper'>
         <div className='Contact_rightside'>
@@ -50,6 +33,7 @@ const Order=(props)=> {
          Fill the form below to order
           </p>
          
+         {/* Form area */}
 
         <form action="https://sheetdb.io/api/v1/dbno1om97ktt4" method="post" id="sheetdb-form" className='form'  autoComplete="on">
           <div>
@@ -116,13 +100,6 @@ const Order=(props)=> {
             <button data-popup-target="#popup" type='submit' >Order</button>
           </div>
         </form>
-        {/* <div className="active"> */}
-         <div className='popup' id="popup">
-           <Orderplaced/>   
-         </div>
-         <div  className='overlay' id="overlay"></div>
-
-        {/* </div> */}
        
         </div>
         </div>
