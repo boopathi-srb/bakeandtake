@@ -1,7 +1,9 @@
+
 .wrapper{
   width: 70ch;
   border-radius: 50px;
-  box-shadow: 2px 2px 10px  rgb(10, 10, 10);
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 2px 2px 10px  rgb(27, 26, 26);
   backdrop-filter: blur(2em);
   margin: auto;
   margin-top: 7rem;
@@ -25,10 +27,12 @@
   }
 .wrapper>h1{
   font-size: 3rem;
+  /* color: white; */
 }
 .wrapper>p{
   font-size: 1rem;
   margin-bottom: 3.5rem;
+  /* color: white; */
 }
 .wrapper>a{
   text-decoration: none;

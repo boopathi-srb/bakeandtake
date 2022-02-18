@@ -1,6 +1,7 @@
 import React from 'react';
-import classes from './order.module.css'
-// import orderplaced from '../Orderplaced/orderplaced'
+import  './order.css';
+
+import Orderplaced from '../Orderplaced/orderplaced'
 
 window.onload=function(){
   var form = document.getElementById('sheetdb-form');
@@ -13,11 +14,6 @@ window.onload=function(){
     }).then(
         response => response.json()
     )
-    .then(() => {
-      // you can put any JS code here
-      window.open( "/orderplaced", "_self");
-  
-    });
   
   });
 }
@@ -25,18 +21,31 @@ window.onload=function(){
 
 
 const Order=(props)=> {
+  const openPopupview = document.querySelectorAll('[data-popup-target]')
+ const overlay = document.getElementById('overlay')
 
- 
-  return <div className={classes.Order}>
-      <div className={classes.order_wrapper}>
-        <div className={classes.Contact_rightside}>
-          <h1 className={classes.Contact_heading}>Order here!</h1>
-          <p className={classes.content}>
+ openPopupview.forEach(button=>{
+   button.addEventListener('click', ()=>{
+     const popup=document.querySelector(button.dataset.popupTarget)
+     openPopup(popup)
+   })
+ })
+ const openPopup=(popup)=>{
+   if (popup == null)
+   return
+   popup.classList.add('active')
+   overlay.classList.add('active')
+ }
+  return <div className='Order'>
+      <div className='order_wrapper'>
+        <div className='Contact_rightside'>
+          <h1 className='Contact_heading'>Order here!</h1>
+          <p className='content'>
          Fill the form below to order
           </p>
          
 
-        <form action="https://sheetdb.io/api/v1/dbno1om97ktt4" method="post" id="sheetdb-form" className={classes.form}  autoComplete="on">
+        <form action="https://sheetdb.io/api/v1/dbno1om97ktt4" method="post" id="sheetdb-form" className='form'  autoComplete="on">
           <div>
             <label for="Name">Name</label>
             <input type="text" placeholder='Enter your Full name' name="data[Name]" required />
@@ -51,7 +60,7 @@ const Order=(props)=> {
           </div>
           <div>
            <label for="Cake flavour">Cake flavour</label>
-            <select className={classes.selection} name="data[Cake flavour]" required>
+            <select className='selection' name="data[Cake flavour]" required>
               <option disabled="disabled" selected>Pick your choice!</option>
               <option>Black forest</option>
               <option>White forest</option>
@@ -81,7 +90,7 @@ const Order=(props)=> {
           </div>
           <div>
             <label for="Quantity">Quantity</label>
-            <select className={classes.selection}  name="data[Quantity]" required>
+            <select className='selection'  name="data[Quantity]" required>
             <option disabled="disabled" selected>Pick the quantity</option>
              <option>2kg</option>
              <option>1.5kg</option>
@@ -98,9 +107,13 @@ const Order=(props)=> {
             <input type="datetime-local" placeholder="Enter the delivery due time" name="data[Delivery due]" required/>
           </div>
           <div>
-            <button color="blue" type='submit' >Order</button>
+            <button data-popup-target="#popup" type='submit' >Order</button>
           </div>
         </form>
+         <div className='popup' id="popup">
+           <Orderplaced/>   
+         </div>
+         <div  className='overlay' id="overlay"></div>
         </div>
         </div>
   </div>;

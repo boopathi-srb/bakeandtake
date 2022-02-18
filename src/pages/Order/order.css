@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Fredoka+One&family=Josefin+Sans:wght@500&family=Montserrat:wght@500&family=Poppins:wght@500&display=swap');
 .Order{
-  margin-top: 4rem;
+  margin-top: 6rem;
   margin-bottom: 2rem;
 }
 .content{
@@ -64,6 +64,33 @@
 
 .selection:focus option:first-of-type {
   display: none;
+}
+#popup{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 100;
+  /* transition: 200ms ease-in-out; */
+}
+#popup.active{
+  transform: translate(-50%, -50%) scale(1);
+}
+#overlay{
+  background-color: #000000;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%;
+  z-index: 99;
+  opacity: 0;
+  pointer-events: none;
+}
+#overlay.active{
+  opacity: 0.8 ;
+  pointer-events: all;
+
 }
 @media screen and (max-width:768px) {
   .form{
