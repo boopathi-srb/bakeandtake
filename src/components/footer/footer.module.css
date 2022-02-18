@@ -50,16 +50,16 @@
   text-decoration: none;
   color: #ffd700;
 }
-.footer_innerwrapper1, .footer_innerwrapper2{
+.footer_innerwrapper2{
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.footer_innerwrapper1>img{
-  width: 20ch;
+.footer_innerwrapper1> a>img{
+  width: 3ch;
   text-align: center;
-  /* margin-top: 10px; */
+  margin-top: 10px;
 }
 .footer_innerwrapper1>p{
   color: #ffd700;
