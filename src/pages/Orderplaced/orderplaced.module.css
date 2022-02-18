@@ -42,6 +42,7 @@
   border-radius: 1rem;
   transform: scale(1);
   animation: transform 400ms ease-in-out;
+  animation-delay: 500ms;
   font-size: 1.2rem;
 }
 .wrapper>a:hover{
