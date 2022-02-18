@@ -40,7 +40,7 @@
 .productimage{
   /* width: 60%; */
   max-width: 30ch;
-  border-radius: 40%;
+  border-radius: 30%;
   margin: 12px;
 }
 .wrapper1, .wrapper2{
@@ -68,7 +68,7 @@
 .cakepreview{
    height: 50%;
    width:100%;
-   border-radius: 400%;
+   /* border-radius: 400%; */
 }
 .typography{
   font-size: 1.5em;
@@ -98,6 +98,8 @@
   }
   .productimage{
     max-width: 20ch;
+    border-radius: 50px;
+    margin-top: 2rem;
   }
   .cakeoptions{
     display: flex;

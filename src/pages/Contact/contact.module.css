@@ -1,5 +1,6 @@
 .Contact{
   text-align: left;
+  margin-top: 3rem;
 }
 .Contact_heading{
   padding: 1rem 01rem 0rem ;
@@ -39,4 +40,8 @@
   top: 10px;
   right: 40px;
   animation: animate1 3s ease-in-out infinite;
+}
+.Contact_leftside
+{
+  margin-top: 3rem;
 }
