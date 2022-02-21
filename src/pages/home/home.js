@@ -7,8 +7,8 @@ import "aos/dist/aos.css"
 
 const Home=(props)=> {
   AOS.init({
-    delay: 500,
-    duration:1000,
+    delay: 300,
+    duration:800,
     offset:100
   });
   const offerings=props.data.offerings.map((item,pos)=>{
@@ -19,20 +19,13 @@ const Home=(props)=> {
   const cakeOptions=props.data.cakeOptions.map((item,pos)=>{
     return(
       <div className={classes.wrapper1}>
-        <div className={classes.cakewrapper1}>
-         <div className={classes.cakepreview} data-aos="zoom-in-up" data-aos-once="true" >
+        <div className={classes.cakewrapper1}  data-aos="zoom-in-up" data-aos-once="true">
             <img   key={pos} className={classes.productimage} src={item.imageSrc} alt={item.styleName}></img>
-         </div>
-        </div>
-       
-        <div   className={classes.cakename}  data-aos="zoom-in-up" data-aos-once="true" >
          <h1   key={pos}  >{item.styleName}</h1>
          <h3   key={pos}>Rate : {item.Rate}</h3>
         </div>
      </div>
-
     )
-    
     })
    
   return (
