@@ -4,6 +4,8 @@ import classes from '../footer/footer.module.css'
 import LocationIcon from '../footer/Location icon.png'
 import logo from './instagram.png'
 import AOS from 'aos';
+import "aos/dist/aos.css"
+
 const Footer = () => {
   AOS.init();
   return (
