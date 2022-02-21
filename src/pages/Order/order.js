@@ -1,5 +1,7 @@
 import React from 'react';
 import  './order.css';
+import AOS from 'aos';
+import "aos/dist/aos.css"
 
 // JS code for posting into google sheets
 
@@ -25,17 +27,22 @@ window.onload=function(){
 
 
 const Order=(props)=> {
+  AOS.init({
+    delay: 300,
+    duration:800,
+    offset:100
+  });
   return <div className='Order'>
       <div className='order_wrapper'>
         <div className='Contact_rightside'>
-          <h1 className='Contact_heading'>Order here!</h1>
-          <p className='content'>
+          <h1 className='Contact_heading'  data-aos="zoom-in" data-aos-once="true">Order here!</h1>
+          <p className='content'  data-aos="zoom-in" data-aos-once="true">
          Fill the form below to order
           </p>
          
          {/* Form area */}
 
-        <form action="https://sheetdb.io/api/v1/dbno1om97ktt4" method="post" id="sheetdb-form" className='form'  autoComplete="on">
+        <form action="https://sheetdb.io/api/v1/dbno1om97ktt4" method="post" id="sheetdb-form" className='form'  autoComplete="on"  data-aos="zoom-in" data-aos-once="true">
           <div>
             <label for="Name">Name</label>
             <input type="text" placeholder='Enter your Full name' name="data[Name]" required />

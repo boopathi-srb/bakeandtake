@@ -112,8 +112,9 @@
     width: 100vw;
     margin-bottom: 5rem;
     padding: 0rem;
+    overflow: hidden;
   }
-  .wrapper1{
+  .cakewrapper1{
    margin: auto;
    display: flex;
    flex-direction: column;
@@ -125,16 +126,14 @@
   }
   .cakewrapper1{
     height: 80%;
-    width: 80%;
+    width: 80vw;
    
   }
   .cakewrapper1>h1{
-    width: 100%;
     text-align: center;
     font-size: 1.3rem;
   }
   .cakewrapper1>h3{
-    width: 100%;
     text-align: center;
     font-size: 1rem;
   }

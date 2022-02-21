@@ -1,6 +1,6 @@
 .Contact{
   text-align: left;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
 }
 .Contact_heading{
   padding: 1rem 01rem 0rem ;
@@ -31,17 +31,24 @@
 }
 .Contact_wrapper{
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-evenly;
  
 }
-.Contact_wrapper>img{
-  position: absolute;
-  top: 10px;
-  right: 40px;
-  animation: animate1 3s ease-in-out infinite;
+.Contact_leftside{
+  width: 50vw;
+  margin: auto;
 }
 .Contact_leftside
 {
   margin-top: 3rem;
+}
+.Contact_wrapper1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.Contact_innerwrapper1{
+  width: 25ch;
 }
