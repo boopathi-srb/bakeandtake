@@ -18,7 +18,7 @@ const Home=(props)=> {
   });
   const cakeOptions=props.data.cakeOptions.map((item,pos)=>{
     return(
-      <div className={classes.wrapper1} data-aos="zoom-in-out" data-aos-once="true">
+      <div className={classes.wrapper1} >
         <div className={classes.cakewrapper1}  >
          <img   key={pos} className={classes.productimage} src={item.imageSrc} alt={item.styleName}></img>
          <h1   key={pos}  >{item.styleName}</h1>
