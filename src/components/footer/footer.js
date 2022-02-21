@@ -14,7 +14,7 @@ const Footer = () => {
   });
   return (
     <div  className={classes.footer}>
-      <div  data-aos="zoom-in"data-aos-once="true"  data-aos-offset="50px"  className={classes.footer_wrapper1}>
+      <div  data-aos="zoom-in-up" data-aos-once="true"   className={classes.footer_wrapper1}>
         <h3 className={classes.footer_heading}>Useful links</h3>
         <div className={classes.footer_links} >
          <a href="/">Home</a>
@@ -22,7 +22,7 @@ const Footer = () => {
          <a href="/Contact">Contact</a>
         </div>
       </div>
-      <div  data-aos="zoom-in"data-aos-once="true" data-aos-offset="50px" className={classes.footer_wrapper2}>
+      <div  data-aos="zoom-in-up" data-aos-once="true" className={classes.footer_wrapper2}>
         <div className={classes.footer_innerwrapper1} >
         <h3 className={classes.footer_heading}>Social media</h3>
           <a  href="https://www.instagram.com/bake._.n_take/" >
@@ -30,7 +30,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div  data-aos="zoom-in" data-aos-once="true" data-aos-offset="50px"  className={classes.footer_wrapper3}>
+      <div  data-aos="zoom-in-up" data-aos-once="true" className={classes.footer_wrapper3}>
         <div className={classes.footer_innerwrapper2}>
          <img  src={LocationIcon} alt='locationicon'/>
          <p>5/292 E-10 Ajantha Nagar, Kanuvai, Somayampalayam, Coimbatore, Tamil Nadu - 641108</p>
