@@ -7,7 +7,11 @@ import AOS from 'aos';
 import "aos/dist/aos.css"
 
 const Footer = () => {
-  AOS.init();
+  AOS.init({
+    delay: 300,
+    duration:800,
+    offset:100
+  });
   return (
     <div  className={classes.footer}>
       <div  data-aos="zoom-in"data-aos-once="true"  data-aos-offset="50px"  className={classes.footer_wrapper1}>

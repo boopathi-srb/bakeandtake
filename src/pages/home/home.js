@@ -38,11 +38,8 @@ const Home=(props)=> {
         <p>Experience the unique taste of the home baked cakes..! </p>
       </div>
       <div className={classes.cakeoptions}>
-        <div data-aos="zoom-in-up" data-aos-once="true" >
-         <h1  className={classes.greeting}>Cake gallery</h1>
-        </div>
-     
-      {cakeOptions}
+         <h1  className={classes.greeting} ata-aos="zoom-in-up" data-aos-once="true">Cake gallery</h1>
+         {cakeOptions}
       </div>
       <div   className={classes.offerings_wrapper}>
         <h1  data-aos="zoom-in-up" data-aos-once="true"  className={classes.greeting}>Our offerings</h1>
