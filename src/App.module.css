@@ -7,7 +7,6 @@
   flex-direction: column;
   position: relative;
   overflow-x: hidden;
-  /* font-family: 'Fredoka One', sans-serif; */
 }
 .body{
   min-height: 68vh;

@@ -13,6 +13,7 @@ import Contact  from './pages/Contact/Contact';
 import Order from './pages/Order/order';
 import Orderplaced from './pages/Orderplaced/orderplaced';
 import Scroll from './components/scroll/scroll';
+import Gallery from './pages/cake gallery/gallery';
 // import AOS from 'aos';
 class App extends Component {
   
@@ -31,6 +32,7 @@ class App extends Component {
       <Routes>
          
          <Route path="/" element={<Home data={this.state.productData}/>} exact></Route>
+         <Route path="/Gallery" element={<Gallery data={this.state.productData}/>} exact></Route>
          <Route path="/About" element={ <About/>} exact></Route>
          <Route path="/Contact" element={ <Contact/>} exact></Route>
          <Route path="/Order" element={ <Order/>} exact></Route>
