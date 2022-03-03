@@ -16,6 +16,7 @@ function Gallery(props) {
          <img   key={pos} className={classes.productimage} src={item.imageSrc} alt={item.styleName}></img>
          <h1   key={pos}  >{item.styleName}</h1>
          <h3   key={pos}>Rate : {item.Rate}</h3>
+         <a href="/order">Order</a>
         </div>
      </div>
     )
