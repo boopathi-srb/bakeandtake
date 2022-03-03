@@ -22,7 +22,7 @@ function Gallery(props) {
     )
     })
   return (
-    <div>
+    <div className={classes.Gallery}>
        <h1  className={classes.greeting} data-aos="zoom-in" data-aos-once="true">Cake gallery</h1>
       <div className={classes.cakeoptions}>
        

@@ -15,6 +15,7 @@ const Topbar =()=>{
        </input>
        <nav className={classes.topbar_links} >
          <a href="/">Home</a>
+         <a href="/Gallery">Gallery</a>
          <a href="/About">About</a>
          <a href="/Contact">Contact</a>
          <a href="/Order">Order</a>

@@ -18,6 +18,7 @@ const Footer = () => {
         <h3 className={classes.footer_heading}>Useful links</h3>
         <div className={classes.footer_links} >
          <a href="/">Home</a>
+         <a href="/Gallery">Gallery</a>
          <a href="/About">About</a>
          <a href="/Contact">Contact</a>
          <a href="/Order">Order</a>
