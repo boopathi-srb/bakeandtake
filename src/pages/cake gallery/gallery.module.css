@@ -23,7 +23,7 @@
    justify-content: space-evenly;
    border-radius: 3rem;
    box-shadow: 2px 2px 10px  rgb(10, 10, 10);
-  width: 32ch;
+  width: 25ch;
  
 }
 .cakewrapper1>h1{
@@ -42,9 +42,9 @@
   border-radius: 2rem;
 }
 .productimage{
-  max-width: 26ch;
+  max-width: 23ch;
   border-radius: 3rem;
-  margin-top: 1.5rem;
+  margin-top: 0.7rem;
 }
 .greeting{
   font-size: 4em;
