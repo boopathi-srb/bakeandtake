@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300&display=swap');
 .topbar{
   display: flex;
   background: hsl(0, 0%, 0% );
@@ -172,6 +172,7 @@
     left: -50%;
     font-size: 1.5em;
     font-weight: 600;
+    font-family: 'Poppins';
     animation: hamburgerX 500ms ease-in;
   }
   @keyframes hamburgerX {
