@@ -1,6 +1,7 @@
 import React from 'react'
 import flyer from '../../Bake&Take-home.png';
 import classes from './home.module.css';
+import fssai from './fssai.png'
 import AOS from 'aos';
 import "aos/dist/aos.css"
 
@@ -22,11 +23,33 @@ function Home(props) {
       <div >
         <img data-aos="zoom-in" data-aos-once="true"  className={classes.flyer} src={flyer} alt='BnT-flyer'></img>
       </div>
+
       <div className={classes.greetingwrapper} data-aos="zoom-in" data-aos-once="true" >
         <h1 className={classes.heading} >Home Baked<br/>&<br/>Eggless</h1>
         <p>Experience the unique taste of the home baked cakes..! </p>
       </div>
-      
+
+      <div className={classes.cake_gallery}>
+        <h1>Wanna see the cake gallery?</h1>
+        <a href='/gallery'>View cake gallery.....</a>
+      </div>
+
+      <div className={classes.fssai}>
+        <div className={classes.fssai_wrapper}>
+        <h1>We are</h1>
+        <img src={fssai} alt='fssai_logo'/>   
+        <h1>approved!</h1> 
+        </div>
+        <div className={classes.fssai_btn}>
+          <a href='./about'>See more about us...</a>
+        </div>
+      </div>
+       
+      <div className={classes.home_order}>
+       <h2>Mouth watering right?<br/>Order now</h2>
+       <a href='./order'>Order here!</a>
+      </div>
+
       <div   className={classes.offerings_wrapper}>
         <h1  data-aos="zoom-in" data-aos-once="true"  className={classes.greeting}>Our offerings</h1>
         <div className={classes.typography}>

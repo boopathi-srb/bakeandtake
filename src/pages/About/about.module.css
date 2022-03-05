@@ -44,9 +44,28 @@
     50%{transform: scale(100%);}
     100%{transform: scale(0%);}
 }
+.fssai{
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+}
+.fssai_wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fssai_wrapper img{
+  width: 25ch;
+}
 @media only screen and (max-width:830px){
   .img{
     margin:auto;
     /* width: 90vw; */
+  }
+  .fssai_wrapper{
+    flex-direction: column;
   }
 }

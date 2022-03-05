@@ -8,12 +8,12 @@
   position: relative;
   overflow-x: hidden;
 }
-.body{
+body{
   min-height: 68vh;
   margin-top: 8vh;
   max-width: 100vw;
   overflow-x: hidden;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Poppins', cursive;
 }
 header{
   margin: 0;
@@ -23,7 +23,7 @@ header{
   position: fixed;
   top: 0%;
   max-height: 8vh;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Poppins', cursive;
   font-weight: 300;
 }
 footer{
@@ -31,11 +31,12 @@ footer{
   bottom: 0%;
   margin-top: auto;
   margin-bottom: 0%;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Poppins', cursive;
   /* max-height: 20vh; */
 }
 @media screen and (max-width:768px) {
   body, header, footer{
     overflow-x: hidden;
+    font-family: 'cursive';
   }
 }
