@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  font-weight: 300;
   height:max-content;
   justify-content: space-evenly;
   z-index: 90;
@@ -24,7 +23,6 @@
   color: #ffd700;
   position: relative;
   width: fit-content;
-  font-weight: 900;
   text-align: center;
   text-transform:uppercase;
 }

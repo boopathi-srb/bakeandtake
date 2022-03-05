@@ -29,12 +29,12 @@ function Home(props) {
         <p>Experience the unique taste of the home baked cakes..! </p>
       </div>
 
-      <div className={classes.cake_gallery}>
+      <div className={classes.cake_gallery} data-aos="zoom-in" data-aos-once="true">
         <h1>Wanna see the cake gallery?</h1>
         <a href='/gallery'>View cake gallery.....</a>
       </div>
 
-      <div className={classes.fssai}>
+      <div className={classes.fssai} data-aos="zoom-in" data-aos-once="true">
         <div className={classes.fssai_wrapper}>
         <h1>We are</h1>
         <img src={fssai} alt='fssai_logo'/>   
@@ -45,7 +45,7 @@ function Home(props) {
         </div>
       </div>
        
-      <div className={classes.home_order}>
+      <div className={classes.home_order} data-aos="zoom-in" data-aos-once="true">
        <h2>Mouth watering right?<br/>Order now</h2>
        <a href='./order'>Order here!</a>
       </div>

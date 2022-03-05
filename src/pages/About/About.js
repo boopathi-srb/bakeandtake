@@ -18,7 +18,7 @@ function About() {
           <img className={classes.img} src={logo} alt='BnT-logo'></img>
         </div>
       </div>
-      <div className={classes.fssai}>
+      <div className={classes.fssai} data-aos="zoom-in" data-aos-once="true">
         <div className={classes.fssai_wrapper}>
         <h1>We are</h1>
         <img src={fssai} alt='fssai_logo'/>   

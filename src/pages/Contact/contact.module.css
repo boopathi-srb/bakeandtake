@@ -45,8 +45,8 @@
 }
 .Contact_wrapper1{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: left;
   align-items: flex-start;
 }
 .Contact_innerwrapper1{

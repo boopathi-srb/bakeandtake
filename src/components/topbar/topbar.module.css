@@ -10,12 +10,13 @@
   /* z-index: 999; */
   position: fixed;
 }
+
 .topbar>img{
-  max-width: 60px;
+  max-width: 80px;
   align-items: left;
   position:absolute;
-  left: 2%;
-  top: -2;
+  left: 5%;
+  top: 0%;
   margin: auto;
 }
 .rightside{
