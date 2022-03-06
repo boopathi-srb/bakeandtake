@@ -20,7 +20,7 @@
    background-color: black;
 }
 .footer_heading{
-  color: #ffd700;
+  color: #d4af37;
   position: relative;
   width: fit-content;
   text-align: center;
@@ -52,7 +52,7 @@
 }
 .footer_links>a{
   text-decoration: none;
-  color: #ffd700;
+  color: #d4af37;
 }
 .footer_innerwrapper2{
   display: inline-flex;
@@ -66,7 +66,7 @@
   margin-top: 10px;
 }
 .footer_innerwrapper1>p{
-  color: #ffd700;
+  color: #d4af37;
 }
 .footer_wrapper3{
   background-color: white;

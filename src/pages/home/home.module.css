@@ -27,7 +27,7 @@
   height: 10px;
   width: 50%;
   border-radius: 25%;
-  background-color: #FFD700;
+  background-color: #d4af37;
   position: absolute;
   top: 100%;
   left:25%;
@@ -70,7 +70,7 @@
 .cake_gallery{
   margin-bottom: 4rem;
   padding: 4rem 0rem;
-  color: #FFD700;
+  color: #d4af37;
   background-color: #000000;
   height: fit-content;
   display: flex;
@@ -111,7 +111,7 @@ align-items: center;
 .fssai_btn a{
   text-decoration: none;
   background-color:#000000;
-  color:#FFD700;
+  color:#d4af37;
   padding: 0.5rem;
   border-radius: 1rem;
   margin-top: 2rem;
@@ -119,7 +119,7 @@ align-items: center;
   cursor: pointer;
 }
 .home_order{
-  color: #FFD700;
+  color: #d4af37;
   background-color: #000000;
   padding: 2rem 0rem;
   margin-bottom: 4rem;

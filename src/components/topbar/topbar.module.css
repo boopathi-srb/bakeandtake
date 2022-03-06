@@ -33,7 +33,7 @@
   margin: 1rem ;
   font-size: 1.2rem;
   text-decoration: none;
-  color:  #FFD700;
+  color:  #d4af37;
   padding: 0.2em;
   border-radius: 10%;
 }
@@ -45,8 +45,8 @@
   border-radius: 1rem;
  }
 @keyframes navlinks {
-  from{ color: #FFD700; background-color: black;}
-  to{color: black; background-color: #FFD700;}
+  from{ color: #d4af37; background-color: black;}
+  to{color: black; background-color: #d4af37;}
 }
 .topbar_links a:hover{
    opacity: 0.8;
@@ -63,7 +63,7 @@
   height: 21px;
   border-radius: 5px;
   border: none;
-  background-color: #FFD700;
+  background-color: #d4af37;
   display: none;
 }
 
@@ -137,7 +137,7 @@
   .toggle_button_label span::after,
   .toggle_button_label span::before{
     display: block;
-    background:#FFD700;
+    background:#d4af37;
     width: 1.5em;
     height: 0.2em;
     border-radius: 2px;
@@ -165,7 +165,7 @@
   }
   .toggle_button:checked ~  .toggle_button_label p{
     visibility: visible;
-    color: #FFD700;
+    color: #d4af37;
     position: absolute;
     top: -12%;
     left: -50%;
