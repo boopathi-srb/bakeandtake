@@ -45,6 +45,7 @@
 }
 .productimage{
   max-width: 23ch;
+  aspect-ratio: 1;
   border-radius: 3rem;
   margin-top: 0.7rem;
 }
