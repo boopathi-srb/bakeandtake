@@ -32,22 +32,22 @@ const ProductData = {
   cakeOptions: [
       {
           styleName: 'Black forest',
-          Rate: 'Rs.350-1/2kg, Rs.650-1kg',
+          Rate: 'Rs.350-1/2kg, Rs.700-1kg',
           imageSrc: Blackforest
       },
       {
         styleName: 'Black forest',
-        Rate:'Rs.350-1/2kg, Rs.650-1kg',
+        Rate:'Rs.350-1/2kg, Rs.700-1kg',
         imageSrc: Blackforest1
       },
       {
         styleName: 'Black forest',
-        Rate: 'Rs.350-1/2kg, Rs.650-1kg',
+        Rate: 'Rs.350-1/2kg, Rs.700-1kg',
         imageSrc: Blackforest2
       },
       {
         styleName: 'Black forest',
-        Rate:'Rs.350-1/2kg, Rs.650-1kg',
+        Rate:'Rs.350-1/2kg, Rs.700-1kg',
         imageSrc: Blackforest3
       },
       {
@@ -102,17 +102,17 @@ const ProductData = {
     },
       {
         styleName: 'White  forest',
-        Rate: 'Rs.350-1/2kg, Rs.650-1kg',
+        Rate: 'Rs.350-1/2kg, Rs.700-1kg',
         imageSrc: Whiteforest
     },
     {
         styleName: 'White  forest',
-        Rate: 'Rs.350-1/2kg, Rs.650-1kg',
+        Rate: 'Rs.350-1/2kg, Rs.700-1kg',
         imageSrc: Whiteforest1
     },
     {
         styleName: 'White  forest',
-        Rate: 'Rs.350-1/2kg, Rs.650-1kg',
+        Rate: 'Rs.350-1/2kg, Rs.700-1kg',
         imageSrc: Whiteforest2
     },
     {
