@@ -78,3 +78,12 @@
   50%{transform: scale(100%);}
   100%{transform: scale(0%);}
 }
+aside{
+  background-color: red;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+aside> h3{
+  color: white;
+}

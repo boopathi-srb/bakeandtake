@@ -24,8 +24,10 @@ function Gallery(props) {
   return (
     <div className={classes.Gallery}>
        <h1  className={classes.greeting} data-aos="zoom-in" data-aos-once="true">Cake gallery</h1>
+       <aside data-aos="zoom-in" data-aos-once="true">
+         <h3>Cost may vary upon customisation!</h3>
+       </aside>
       <div className={classes.cakeoptions}>
-       
         {cakeOptions}
      </div>
     </div>
