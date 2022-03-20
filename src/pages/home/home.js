@@ -22,7 +22,7 @@ function Home(props) {
     <div className={classes.Home}>
       <main >
         <img data-aos="zoom-in" data-aos-once="true"  className={classes.flyer} src={logo} alt='BnT-flyer'></img>
-        <mark data-aos="zoom-in" data-aos-once="true">Bake N' Take</mark>
+        <mark data-aos="zoom-in" data-aos-once="true">BakeN'Take</mark>
       </main>
 
       <section className={classes.greetingwrapper} data-aos="zoom-in" data-aos-once="true" >
