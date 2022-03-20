@@ -34,9 +34,3 @@ footer{
   font-family: 'Poppins', cursive;
   /* max-height: 20vh; */
 }
-@media screen and (max-width:768px) {
-  body, header, footer{
-    overflow-x: hidden;
-    font-family: 'cursive';
-  }
-}

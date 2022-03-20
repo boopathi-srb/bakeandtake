@@ -12,12 +12,12 @@ function Gallery(props) {
   const cakeOptions=props.data.cakeOptions.map((item,pos)=>{
     return(
       <div className={classes.wrapper1}  >
-        <div  data-aos="zoom-in" data-aos-once="true" className={classes.cakewrapper1}  >
+        <figure  data-aos="zoom-in" data-aos-once="true" className={classes.cakewrapper1}  >
          <img   key={pos} className={classes.productimage} src={item.imageSrc} alt={item.styleName}></img>
-         <h1   key={pos}  >{item.styleName}</h1>
+         <figcaption   key={pos}  >{item.styleName}</figcaption>
          <h3   key={pos}>Rate : {item.Rate}</h3>
          <a href="/order">Order</a>
-        </div>
+        </figure>
      </div>
     )
     })

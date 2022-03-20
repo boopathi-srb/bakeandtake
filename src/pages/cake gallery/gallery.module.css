@@ -26,7 +26,8 @@
   width: 25ch;
  
 }
-.cakewrapper1>h1{
+.cakewrapper1>figcaption{
+  font-weight: 700;
   text-align: center;
   font-size: 1.3rem;
 }

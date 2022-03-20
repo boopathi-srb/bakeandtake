@@ -1,23 +1,25 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Fredoka+One&family=Josefin+Sans:wght@500&family=Montserrat:wght@500&display=swap'); */
 .footer{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height:max-content;
-  justify-content: space-evenly;
   z-index: 90;
   padding: 10px;
   position: relative;
   background-color: black;
 }
-.footer_wrapper1, .footer_wrapper2, .footer_wrapper3{
+.footer>section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height:max-content;
+  justify-content: space-evenly;
+}
+.footer>section>p{
+  color: #d4af37;
+}
+.footer_wrapper1, .footer_wrapper2, .footer_wrapper3, .footer_wrapper4{
   border-radius: 10px;
-   /* box-shadow: 2px 2px 10px  rgb(250, 227, 150); */
-   backdrop-filter: blur(2em);
-   display: inline-flex;
-   flex-direction: column;
-   align-items: center;
-   background-color: black;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
 }
 .footer_heading{
   color: #d4af37;
@@ -53,6 +55,8 @@
 .footer_links>a{
   text-decoration: none;
   color: #d4af37;
+  transform: scale(1);
+  transition: transform 400ms ease-in-out;
 }
 .footer_innerwrapper2{
   display: inline-flex;
@@ -64,6 +68,8 @@
   width: 3ch;
   text-align: center;
   margin-top: 10px;
+  transform: scale(1);
+  transition: transform 400ms ease-in-out;
 }
 .footer_innerwrapper1>p{
   color: #d4af37;
@@ -81,8 +87,27 @@
   padding: 10px;
   text-align: center;
 }
-@media only screen and (max-width:768px){
+.footer_wrapper4{
+  width: 20ch;
+  margin: 1rem;
+  justify-content: space-around;
+}
+.footer_wrapper4>a{
+  background-color:red;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  font-size: 2rem;
+  transform: scale(1);
+  transition: transform 400ms ease-in-out;
+}
+.footer_wrapper4>a:hover, .footer_links>a:hover, .footer_innerwrapper1> a>img:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+}
+/* @media only screen and (max-width:768px){
   .footer_wrapper3{
     margin: 30px;
   }
-}
+} */
